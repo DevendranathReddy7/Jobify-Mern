@@ -5,3 +5,6 @@ export { default as SmallSideBar } from './SmallSideBar.jsx'
 export { default as Navbar } from './Navbar.jsx'
 export { default as ThemeToggle } from './ThemeToggle.jsx'
 export { default as FormSelect } from './FormSelect.jsx'
+export { default as SearchContainer } from './SearchContainer.jsx'
+export { default as JobsContainer } from './JobsContainer.jsx'
+
