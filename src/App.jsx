@@ -1,10 +1,13 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import { AddJob, Admin, AllJobs, DashboardLayout, Error, HomeLayout, Landing, Login, Profile, Register, Stats } from './pages'
+import { AddJob, Admin, AllJobs, DashboardLayout, Error, HomeLayout, Landing, Login, Profile, Register, Stats, EditJob } from './pages'
 import { actions as RegisterActions } from "./pages/Register";
 import { actions as LoginActions } from "./pages/Login";
 import { actions as AddJobActions } from "./pages/AddJob";
 import { loader as dashboardLoader } from "./pages/DashboardLayout";
 import { loader as allJobsLoader } from "./pages/AllJobs";
+import { loader as editJobLoader } from "./pages/EditJob";
+import { actions as editJobActions } from "./pages/EditJob";
+
 
 export const checkDefaultTheme = () => {
   const isDarkTheme = localStorage.getItem('darkTheme') === 'true';
@@ -55,6 +58,11 @@ const router = createBrowserRouter([
             path: 'all-jobs',
             element: <AllJobs />,
             loader: allJobsLoader
+          }, {
+            path: 'edit-job/:id',
+            element: <EditJob />,
+            loader: editJobLoader,
+            action: editJobActions
           }
         ]
       }
