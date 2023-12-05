@@ -23,11 +23,11 @@ const Register = () => {
             <Form method="post" className="form">
                 <Logo />
                 <h4>Register</h4>
-                <RegisterForm type='text' name='name' defaultValue='Devendra' />
-                <RegisterForm type='text' name='lastName' labelText='last name' defaultValue='Reddy' />
-                <RegisterForm type='text' name='location' defaultValue='India' />
-                <RegisterForm type='email' name='email' defaultValue='dev@gmail.com' />
-                <RegisterForm type='password' name='password' defaultValue='password123' />
+                <RegisterForm type='text' name='name' />
+                <RegisterForm type='text' name='lastName' labelText='last name' />
+                <RegisterForm type='text' name='location' />
+                <RegisterForm type='email' name='email' />
+                <RegisterForm type='password' name='password' />
                 <SubmitBtn />
                 <p>Already a member? <Link to='/login' className="member-btn">Login</Link></p>
             </Form>

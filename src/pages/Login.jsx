@@ -23,8 +23,8 @@ const Login = () => {
             <Form method="post" className="form">
                 <Logo />
                 <h4>Login</h4>
-                <RegisterForm type='email' name='email' defaultValue='dev@gmail.com' />
-                <RegisterForm type='password' name='password' defaultValue='password123' />
+                <RegisterForm type='email' name='email' />
+                <RegisterForm type='password' name='password' />
                 <SubmitBtn />
                 <p>Not a member yet? <Link to='/register' className="member-btn">Register</Link></p>
 
