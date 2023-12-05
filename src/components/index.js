@@ -8,4 +8,6 @@ export { default as FormSelect } from './FormSelect.jsx'
 export { default as SearchContainer } from './SearchContainer.jsx'
 export { default as JobsContainer } from './JobsContainer.jsx'
 export { default as StatItem } from './StatItem.jsx'
-
+export { default as SubmitBtn } from './SubmitBtn.jsx'
+export { default as ChartContainer } from './ChartContainer.jsx'
+export { default as StatsContainer } from './StatsContainer.jsx'
