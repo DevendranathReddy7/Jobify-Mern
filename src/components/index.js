@@ -7,4 +7,5 @@ export { default as ThemeToggle } from './ThemeToggle.jsx'
 export { default as FormSelect } from './FormSelect.jsx'
 export { default as SearchContainer } from './SearchContainer.jsx'
 export { default as JobsContainer } from './JobsContainer.jsx'
+export { default as StatItem } from './StatItem.jsx'
 

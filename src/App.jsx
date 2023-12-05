@@ -8,6 +8,7 @@ import { loader as allJobsLoader } from "./pages/AllJobs";
 import { loader as editJobLoader } from "./pages/EditJob";
 import { actions as editJobActions } from "./pages/EditJob";
 import { actions as deleteJobActions } from "./pages/DeleteJob";
+import { loader as adminLoader } from "./pages/Admin";
 
 
 export const checkDefaultTheme = () => {
@@ -54,7 +55,8 @@ const router = createBrowserRouter([
             element: <Profile />
           }, {
             path: 'admin',
-            element: <Admin />
+            element: <Admin />,
+            loader: adminLoader,
           }, {
             path: 'all-jobs',
             element: <AllJobs />,
