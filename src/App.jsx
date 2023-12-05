@@ -9,6 +9,10 @@ import { loader as editJobLoader } from "./pages/EditJob";
 import { actions as editJobActions } from "./pages/EditJob";
 import { actions as deleteJobActions } from "./pages/DeleteJob";
 import { loader as adminLoader } from "./pages/Admin";
+import { actions as profileActions } from "./pages/Profile";
+import { loader as statsLoader } from "./pages/Stats";
+
+
 
 
 export const checkDefaultTheme = () => {
@@ -49,10 +53,12 @@ const router = createBrowserRouter([
           },
           {
             path: 'stats',
-            element: <Stats />
+            element: <Stats />,
+            loader: statsLoader
           }, {
             path: 'profile',
-            element: <Profile />
+            element: <Profile />,
+            action: profileActions,
           }, {
             path: 'admin',
             element: <Admin />,
